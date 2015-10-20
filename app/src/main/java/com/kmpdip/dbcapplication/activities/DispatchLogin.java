@@ -1,4 +1,4 @@
-package com.kmpdip.dbcapplication;
+package com.kmpdip.dbcapplication.activities;
 
 import com.parse.ui.ParseLoginDispatchActivity;
 

@@ -1,7 +1,8 @@
-package com.kmpdip.dbcapplication;
+package com.kmpdip.dbcapplication.activities;
 
 import android.app.Application;
 
+import com.kmpdip.dbcapplication.R;
 import com.parse.Parse;
 import com.parse.ParseFacebookUtils;
 
