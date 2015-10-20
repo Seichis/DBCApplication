@@ -30,6 +30,9 @@ dependencies {
     compile project(':ParseUI-Login')
     compile fileTree(dir: 'libs', include: 'ParseFacebookUtilsV4-1.9.4.jar')
     compile 'com.facebook.android:facebook-android-sdk:4.0.1'
+    compile fileTree(dir: 'libs', include: 'weka.jar')
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile files('libs/gson-2.2.4.jar')
 
 
 }
