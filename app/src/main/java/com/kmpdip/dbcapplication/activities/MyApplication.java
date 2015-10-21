@@ -6,9 +6,6 @@ import com.kmpdip.dbcapplication.R;
 import com.parse.Parse;
 import com.parse.ParseFacebookUtils;
 
-/**
- * Created by tRiF on 28/7/2015.
- */
 public class MyApplication extends Application {
 
     @Override

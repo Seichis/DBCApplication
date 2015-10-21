@@ -22,19 +22,20 @@
 apply plugin: 'android-library'
 
 dependencies {
-    compile 'com.android.support:support-v4:22.0.0'
-    compile fileTree(dir: 'libs', include: 'Parse-1.9.4.jar')
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.parse:parse-android:1.10.3'
 
-    provided 'com.facebook.android:facebook-android-sdk:4.0.1'
-    provided files("$rootProject.projectDir/ParseUI-Login/libs/ParseFacebookUtilsV4-1.9.4.jar")
+    provided 'com.facebook.android:facebook-android-sdk:4.7.0'
+    provided 'com.parse:parsefacebookutils-v4-android:1.10.3@aar'
+    provided 'com.parse:parsetwitterutils-android:1.10.3'
 }
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.1"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 21
+        minSdkVersion 15
+        targetSdkVersion 22
     }
 }
