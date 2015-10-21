@@ -8,6 +8,7 @@ public class UserToClassify {
     private final String gender;
     private final List<Float> genrePrefs;
     private final String userClass;
+    private final String criterion;
 
     public static class UserToClassifyBuilder{
         private String age;
@@ -15,6 +16,7 @@ public class UserToClassify {
         private String gender;
         private List<Float> genrePrefs;
         private String userClass;
+        private String criterion;
 
         public UserToClassifyBuilder(){
         }
@@ -39,6 +41,10 @@ public class UserToClassify {
             gender=s;
             return this;
         }
+        public UserToClassifyBuilder criterion(String s){
+            criterion=s;
+            return this;
+        }
         public UserToClassify build(){
             return new UserToClassify(this);
         }
@@ -52,5 +58,6 @@ public class UserToClassify {
         gender = builder.gender;
         genrePrefs = builder.genrePrefs;
         userClass = builder.userClass;
+        criterion=builder.criterion;
     }
 }

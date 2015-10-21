@@ -12,7 +12,6 @@ public class Recommendation {
         return r;
     }
 
-    // Private constructor initializing with the book to recommend
     private Recommendation(){
     }
 
