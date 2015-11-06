@@ -10,6 +10,7 @@ public class Book {
     private final String author;
     private final String criterion;
     private final String genre;
+    private final String date;
     private final String userCategory;
     private final Bitmap image;
 
@@ -20,6 +21,7 @@ public class Book {
         private String author;
         private String criterion;
         private String genre;
+        private String date;
         private String userCategory;
         private Bitmap image;
 
@@ -53,6 +55,11 @@ public class Book {
             author=s;
             return this;
         }
+        public BookBuilder date(String s)
+        {
+            date = s;
+            return this;
+        }
         public BookBuilder image(Bitmap s){
             image=s;
             return this;
@@ -71,6 +78,7 @@ public class Book {
         author = builder.author;
         criterion = builder.criterion;
         genre = builder.genre;
+        date = builder.date;
         userCategory = builder.userCategory;
         image=builder.image;
     }
